@@ -1,0 +1,26 @@
+.sticky-note-container {
+  background-color: yellow;
+  max-width: 90%;
+  word-wrap: break-word;
+  white-space: initial;
+
+  .mat-card-title {
+    color: black;
+    display: flex;
+    margin-bottom: 0.5rem;
+    word-wrap: break-word;
+    white-space: initial;
+
+    h6 {
+      margin: 0;
+    }
+
+    .mat-icon {
+      margin-left: auto;
+    }
+  }
+
+  .mat-card-content {
+    font-size: 0.5rem;
+  }
+}
