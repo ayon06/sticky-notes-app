@@ -20,6 +20,7 @@ export class StickyNoteComponent implements OnInit {
   constructor(private focusService: FocusService) { }
 
   ngOnInit() {
+    console.log(this.card);
 
   }
   close() {

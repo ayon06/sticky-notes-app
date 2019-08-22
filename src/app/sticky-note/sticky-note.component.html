@@ -1,8 +1,9 @@
-<mat-card class="sticky-note-container">
+<mat-card class="sticky-note-container" *ngIf="card">
   <mat-card-title>
     <div class="title-container">
-      <h6 tabindex="0" [attr.contenteditable]="editTitle" contentEditable (click)="editTitle = true" (blur)="editTitle = false"
-        (keydown.enter)="editTitle = false" [(ngModel)]="card.title" (ngModelChange)="onTitleModelChange($event)">
+      <h6 tabindex="0" [attr.contenteditable]="editTitle" contentEditable (click)="editTitle = true"
+        (blur)="editTitle = false" (keydown.enter)="editTitle = false" [(ngModel)]="card.title"
+        (ngModelChange)="onTitleModelChange($event)">
         {{card.title}}
       </h6>
     </div>
@@ -11,8 +12,9 @@
     </mat-icon>
   </mat-card-title>
   <mat-card-content>
-    <p tabindex="0" [attr.contenteditable]="editDescription" contentEditable (click)="editDescription = true" (blur)="editDescription = false"
-      (keydown.enter)="editDescription = false" [(ngModel)]="card.description" (ngModelChange)="onDescriptionModelChange($event)">
+    <p tabindex="0" [attr.contenteditable]="editDescription" contentEditable (click)="editDescription = true"
+      (blur)="editDescription = false" (keydown.enter)="editDescription = false" [(ngModel)]="card.description"
+      (ngModelChange)="onDescriptionModelChange($event)">
       {{card.title}}
     </p>
   </mat-card-content>

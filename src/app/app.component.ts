@@ -24,6 +24,7 @@ export class AppComponent {
     const index = section.notesCollections.length;
     section.notesCollections[index] = [];
     section.notesCollections[index][0] = new Card(this.appService.getNewCardId(), section.id, index, 0);
+    console.log('new card: ', section.notesCollections[index][0]);
   }
 
   removeNote(id: number) {
